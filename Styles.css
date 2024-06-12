@@ -1,0 +1,29 @@
+css
+Copy code
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+}
+
+.card-header {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+#log-entries .log-entry {
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#log-entries .log-entry p {
+    margin-bottom: 0.5rem;
+}

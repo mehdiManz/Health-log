@@ -1,0 +1,74 @@
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Log</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="card shadow-sm">
+      <div class="card-header bg-primary text-white text-center">
+        <h1>Health Log</h1>
+      </div>
+      <div class="card-body">
+        <form id="log-form">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="date">Date:</label>
+              <input type="date" class="form-control" id="date" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="breakfast">Breakfast:</label>
+              <input type="text" class="form-control" id="breakfast">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="lunch">Lunch:</label>
+              <input type="text" class="form-control" id="lunch">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="dinner">Dinner:</label>
+              <input type="text" class="form-control" id="dinner">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="supplement">Supplement:</label>
+              <input type="text" class="form-control" id="supplement">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="medication">Medication:</label>
+              <input type="text" class="form-control" id="medication">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="ozempic">Ozempic Shot:</label>
+              <input type="text" class="form-control" id="ozempic">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success btn-block">Add Log</button>
+        </form>
+        <button id="export-logs" class="btn btn-primary btn-block mt-3">Export Logs</button>
+        <button id="clear-logs" class="btn btn-danger btn-block mt-3">Clear All Logs</button>
+        <div id="log-entries" class="mt-4"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
